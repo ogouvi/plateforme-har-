@@ -1,7 +1,6 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
+
 import Image from 'next/image';
-import {footer} from '../pages/data';
+import {footer} from '../lib/data';
 import React from 'react';
 
 function Footer() {
@@ -11,11 +10,11 @@ const {footerIcon} = footer;
   return (
     <div>
     
-      <footer class="bg-bg_footer text-white ">
+      <footer class="bg-[#0e8013] text-white ">
   <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
       <a class="flex flex-col title-font font-medium items-center md:justify-start justify-center text-gray-900">
-         <Image width= "150" height="50" className="" src={footerIcon} />
+         <Image width= "150" height="50" className="" src={footerIcon} alt="" />
         <span class="ml-3 text-2xl font-bold text-white">Plateforme <br/>Haré.com</span>
         <p class="mt-2 text-md text-white font-extrabold">" Une agricuture de valeur "</p>
       </a>

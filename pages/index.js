@@ -13,15 +13,13 @@ import Partenaires from '../components/Partenaires';
 export default function Home() {
   return (
    <>
-   <Welcome />
-   <Navbar />
+   
    <Hero/>
-   <Clients />
-   <Offre/>
    <Services />
+   <Offre/>
+   <Clients />
    <Impacts />
    <Partenaires />
-   <Footer />
    
    </>
   )

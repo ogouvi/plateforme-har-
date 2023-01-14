@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Image from 'next/image';
-import {hero} from '../pages/data';
+import {hero} from '../lib/data';
 import {useState, useRef, useEffect} from 'react';
 
 export function Hero() {
@@ -53,27 +53,39 @@ export function Hero() {
 
   }, []);
 
+//   const autoPlay =()=> {
+//     console.log('autoPlay');
+//     setCurrentIndex((prevState) => prevState + 1);
+// };
+//   setTimeout(()=>{
+//     autoPlay();
+//   },5000);
+
+  const {title1, title2,title3,title4,title5,title6,title7,title8,title9} = hero;
+
   return (
 
 <div>
  <div id="controls-carousel" class=" carousel relative mx-auto" data-carousel="static">
     {/*<!-- Carousel wrapper -->*/}
     <div ref={carousel} class="relative overflow-hidden md:h-[39rem] w-full flex flex-row scroll-smooth snap-x snap-mandatory touch-pan-x z-0 ">
-        {hero.map((item, index)=>{
-            const {title, title2,title3,bgHero,imgHero,color} = item;
-           
-
-            {/*<!-- Item -->*/}
-            return(
-                  
-            <div key={index} className=" text-center relative h-full snap-start">
-                   <div style={{ background:color}} class="h-full w-screen  gap-1  aspect-w-16 aspect-h-9 bg-left-top bg-cover bg-no-repeat z-0 duration-300 ease-in-out" data-carousel-item>
-                       <span className=" text-black text md:text-4xl font-bold flex self-center text-center justify-center py-[12rem] ">{title}<br/>{title2}<br/>{title3}</span>
+  {/*<!-- Item -->*/}
+          <div  className=" text-center relative h-full snap-start">
+                   <div class=" h-[60vh] md:h-full flex items-center w-screen bg-hero1 bg-cover gap-1  aspect-w-16 aspect-h-9 bg-left-top bg-no-repeat z-0 duration-300 ease-in-out" data-carousel-item>
+                       <span className=" text-white bg-gray-800  p-3 bg-opacity-30  rounded-md  md:text-4xl font-bold flex self-center text-center justify-center mx-auto ">{title1}<br/>{title2}<br/>{title3}</span>
                    </div>
             </div>
-            )
-        })}
-      
+            <div  className=" text-center relative h-full snap-start">
+                   <div class="h-[60vh] md:h-[100%] flex items-center w-screen bg-hero2 bg-cover gap-1  aspect-w-16 aspect-h-9 bg-left-top bg-no-repeat z-0 duration-300 ease-in-out" data-carousel-item>
+                       <span className=" text-white bg-gray-800  p-3 bg-opacity-30  rounded-md md:text-4xl font-bold flex self-center text-center justify-center mx-auto ">{title4}<br/>{title5}<br/>{title6}</span>
+                   </div>
+            </div>
+            <div  className=" text-center relative h-full snap-start">
+                   <div class="h-[60vh] md:h-[100%] flex items-center w-screen bg-hero3 bg-cover gap-1  aspect-w-16 aspect-h-9 bg-left-top  bg-no-repeat z-0 duration-300 ease-in-out" data-carousel-item>
+                       <span className=" text-white bg-gray-800  p-3 bg-opacity-30  rounded-md md:text-4xl font-bold flex self-center text-center justify-center mx-auto ">{title7}<br/>{title8}<br/>{title9}</span>
+                   </div>
+            </div>
+    
      </div>
 
     {/*<!-- Slider controls -->*/}

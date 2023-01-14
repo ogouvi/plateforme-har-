@@ -7,9 +7,26 @@ module.exports = {
   ],
   theme: {
     extend: {
-      'fontFamily':{
-        primary: 'Poppins',
+     backgroundImage:{
+      'hero1':"url('../public/assets/images/tractor-june252020.jpg')",
+      'hero2':"url('../public/assets/images/john-deere-tractors-800x533-1.jpg')",
+      'hero3':"url('../public/assets/images/pexels-pixabay-219794.jpg')",
+      'heroApropos':"url('../public/assets/images/pexels-airin-party-767240.jpg')",
+      'heroServ':"url('../public/assets/images/pexels-mark-stebnicki-2749165.jpg')",
+      'heroAchat':"url('../public/assets/images/slider-02.jpg')",
+      'heroVend':"url('../public/assets/images/pexels-maarten-van-den-heuvel-2284170.jpg')",
+     },
+     
+     keyframes:{
+      'open-menu':{
+        '0%':{transform:'scaleY(0)'},
+        '80%':{transform:'scaleY(1.2)'},
+        '100%':{transform:'scaleY(1)'},
       },
+    },
+    animation: {
+      'open-menu':'open-menu 0.5s ease-in-out forwards',
+    },
 
     },
     
@@ -39,6 +56,8 @@ module.exports = {
       xl: '1170px',
     },
   },
+
+
   plugins: [
     require("flowbite/plugin")
   ],
