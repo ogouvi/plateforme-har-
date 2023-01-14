@@ -21,7 +21,8 @@
     "next": "13.0.5",
     "react": "18.2.0",
     "react-animated-slider": "^1.1.4",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

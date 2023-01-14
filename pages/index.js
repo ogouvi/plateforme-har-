@@ -1,6 +1,6 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Welcome from '../components/welcome';
+import Welcome from '../components/Welcome';
 import Navbar from '../components/Navbar';
 import {Hero, Hero2} from '../components/Hero';
 import Clients from '../components/Clients';
