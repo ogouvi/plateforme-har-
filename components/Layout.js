@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import Head from 'next/head';
-import Welcome from './Welcome'
+import Welcome from './welcome'
 import Navbar from './Navbar';
 import Footer from './Footer'
 
