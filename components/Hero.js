@@ -71,17 +71,17 @@ export function Hero() {
     <div ref={carousel} class="relative overflow-hidden md:h-[39rem] w-full flex flex-row scroll-smooth snap-x snap-mandatory touch-pan-x z-0 ">
   {/*<!-- Item -->*/}
           <div  className=" text-center relative h-full snap-start">
-                   <div class=" h-[60vh] md:h-full flex items-center w-screen bg-hero1 bg-cover gap-1  aspect-w-16 aspect-h-9 bg-left-top bg-no-repeat z-0 duration-300 ease-in-out" data-carousel-item>
+                   <div priority="true" className=" h-[60vh] md:h-full flex items-center w-screen bg-hero1 bg-cover gap-1  aspect-w-16 aspect-h-9 bg-left-top bg-no-repeat z-0 duration-300 ease-in-out" data-carousel-item>
                        <span className=" text-white bg-gray-800  p-3 bg-opacity-30  rounded-md  md:text-4xl font-bold flex self-center text-center justify-center mx-auto ">{title1}<br/>{title2}<br/>{title3}</span>
                    </div>
             </div>
             <div  className=" text-center relative h-full snap-start">
-                   <div class="h-[60vh] md:h-[100%] flex items-center w-screen bg-hero2 bg-cover gap-1  aspect-w-16 aspect-h-9 bg-left-top bg-no-repeat z-0 duration-300 ease-in-out" data-carousel-item>
+                   <div priority="true" className="h-[60vh] md:h-[100%] flex items-center w-screen bg-hero2 bg-cover gap-1  aspect-w-16 aspect-h-9 bg-left-top bg-no-repeat z-0 duration-300 ease-in-out" data-carousel-item>
                        <span className=" text-white bg-gray-800  p-3 bg-opacity-30  rounded-md md:text-4xl font-bold flex self-center text-center justify-center mx-auto ">{title4}<br/>{title5}<br/>{title6}</span>
                    </div>
             </div>
             <div  className=" text-center relative h-full snap-start">
-                   <div class="h-[60vh] md:h-[100%] flex items-center w-screen bg-hero3 bg-cover gap-1  aspect-w-16 aspect-h-9 bg-left-top  bg-no-repeat z-0 duration-300 ease-in-out" data-carousel-item>
+                   <div priority="true" className="h-[60vh] md:h-[100%] flex items-center w-screen bg-hero3 bg-cover gap-1  aspect-w-16 aspect-h-9 bg-left-top  bg-no-repeat z-0 duration-300 ease-in-out" data-carousel-item>
                        <span className=" text-white bg-gray-800  p-3 bg-opacity-30  rounded-md md:text-4xl font-bold flex self-center text-center justify-center mx-auto ">{title7}<br/>{title8}<br/>{title9}</span>
                    </div>
             </div>
@@ -108,17 +108,4 @@ export function Hero() {
   )
 }
 
-
-/*
-export function Hero2() {
-    return (
-      <div className="bg-['../public/Assets/images/tractor-june252020.jpg']">
-      <span className="text- text-6xl font-bold flex text-center justify-center py-12 ">Plateforme Complete pour accompagner<br/>les agriculteurs et<br/>
-           les acteurs du domaine agricole bro </span>
-      </div>
-    )
-  }
-  
-
-*/
   

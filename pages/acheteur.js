@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import {acheteur} from '../lib/data';
 import { fs } from '../lib/firebase';
-import { setDoc,doc,addDoc, collection } from 'firebase/firestore';
+import { setDoc,doc,addDoc, collection,Timestamp } from 'firebase/firestore';
 
 function Acheteur() {
   const nameRef = useRef();
@@ -13,15 +13,13 @@ function Acheteur() {
   const addressRef = useRef();
   const messageRef = useRef();
   const [success, setSuccess] = useState();
-  const [error, setError] = useState();
+  const [error, setError] = useState('');
 
-  const route = useRouter();
+  const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(nameRef.current.value,emailRef.current.value,numberRef.current.value,addressRef.current.value,messageRef.current.value)
-    var date = new Date
-    const dateObj = date.getDate();
+    setError(" ");
    
     await addDoc(collection(fs,"InfosAcheteurs"),{
       Nom:nameRef.current.value,
@@ -29,13 +27,14 @@ function Acheteur() {
       Numero:numberRef.current.value,
       Addresse:addressRef.current.value,
       Message:messageRef.current.value,
-      Date: Timestamp.fromDate(new Date(" 10 December 1815")),
+      Date: Timestamp.fromDate(new Date()),
     }).then(()=>{
-        setSuccess(' Vos informations sont bien enregistrées avec succes, merci!')
-        route.push('/')
+        alert(' Vos informations sont bien enregistrées avec succes, merci!')
+        router.push('/')
     })
     .catch(err=>{
-        setError(err.message);
+        setError("enregistrement echoue");
+        console.log(err.message);
     })
   }
   const {heroAchat, icon} = acheteur;
@@ -43,7 +42,7 @@ function Acheteur() {
     <div>
       <div class=" relative overflow-hidden md:h-[38rem]">
         {/*<!-- Item 5 -->*/}
-        <div class="h-[60vw] flex items-center w-screen md:h-full bg-heroAchat bg-cover duration-700 ease-in-out" data-carousel-item>
+        <div class="h-[60vw] flex items-center w-screen md:h-full bg-heroAchat bg-cover duration-700 ease-in-out" priority data-carousel-item>
           {/**<img src="/platefore-hare.com/assets/images/agri-products-fresh-veg.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/> */}
           <span className=" text-white bg-gray-800  p-3 bg-opacity-30 mx-auto rounded-md text-xl md:text-3xl font-bold flex self-center text-center justify-center  ">Je suis acheteur de produits <br /> Agricoles </span>
         </div>
@@ -103,6 +102,7 @@ function Acheteur() {
 
         <div className="bg-gray-100 max-w-[740px] mx-auto flex justify-center self-center px-5 py-10 my-10 border rounded-xl shadow-md shadow-gray-300   ">
           <form className="w-[460px]" onSubmit={handleSubmit}>
+          {error &&<div className="bg-red-500 block text-gray-50 w-full p-2.5 my-1 ">{error}</div>}
             <div class="mb-6">
               <label for="name" class="block mb-2 text-sm font-semibold text-gray-900 dark:text-white">Nom et Prénoms</label>
               <input type="text" ref={nameRef} class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Mr/Mm.  Nom et Prenoms" required />

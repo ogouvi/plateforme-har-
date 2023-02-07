@@ -15,7 +15,7 @@ const Partenaires = () => {
             return((
                 <div key={index} className=" hidden px-8 my-4">
                 
-                    <Image width="200" height="100" src={name} alt="logos" />
+                    <Image width="200" height="100" src={name} priority alt="logos" />
                 </div>
              ))
            })}

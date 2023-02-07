@@ -15,12 +15,11 @@ function Acheteur() {
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('')
 
-  const route =useRouter();
+  const router =useRouter();
 
   const handleSubmit = async (e) => {
+    setError('');
     e.preventDefault();
-    console.log(nameRef.current.value,emailRef.current.value,numberRef.current.value,addressRef.current.value,messageRef.current.value)
-    
     await addDoc(collection(fs,"InfosProducteurs"),{
       Nom:nameRef.current.value,
       Email:emailRef.current.value,
@@ -29,8 +28,8 @@ function Acheteur() {
       Message:messageRef.current.value,
      // Date: Timestamp.fromDate(new Date(getDate())),
     }).then(()=>{
-        setSuccess(' Vos informations sont bien enregistrées avec succes, merci!')
-        route.push('/')
+        alert(' Vos informations sont bien enregistrées avec succes, merci!')
+        router.push('/')
     })
     .catch(err=>{
         setError(err.message);
@@ -42,7 +41,7 @@ function Acheteur() {
     <div>
       <div class=" relative overflow-hidden md:h-[38rem]">
         {/*<!-- Item 5 -->*/}
-        <div class="h-[60vw] flex items-center w-screen md:h-full bg-heroVend bg-cover duration-700 ease-in-out" data-carousel-item>
+        <div priority class="h-[60vw] flex items-center w-screen md:h-full bg-heroVend bg-cover duration-700 ease-in-out" data-carousel-item>
           {/**<img src="/platefore-hare.com/assets/images/agri-products-fresh-veg.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/> */}
           <span className=" text-white bg-gray-800  p-3 bg-opacity-30 mx-auto rounded-md text-xl md:text-2xl font-bold flex self-center text-center justify-center  ">Je suis producteur et vendeur de produits <br /> Agricoles </span>
         </div>
@@ -61,15 +60,14 @@ function Acheteur() {
 
       <h2 className="text-primary_color  text-xl md:text-2xl font-bold flex  text-center justify-center mt-12">Visitez notre plateforme ou <br/> Téléchargez notre application pour recevoir des formations et information sur votre téléphone</h2>
         <div className="bg-gray-100 max-w-[740px] mx-auto flex flex-col justify-center self-center px-5 py-10 my-10 border rounded-xl shadow-md shadow-gray-300   ">
-          <Image width="200" height="100" src={icon} alt="laptop icon" className="py-5 mx-auto"/>
+          <Image priority width="200" height="100" src={icon} alt="laptop icon" className="py-5 mx-auto"/>
 
           <div class="w-full p-4 text-center bg-[#CEEFD9] border rounded-lg shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
         <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Bientôt Disponible</h5>
-        <p class="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">Vous pouvez recevoir des informations et appuis techniques partout oû vous êtes grâce à nos applications. 
-        Enregistrez-vous pour etre notifier à la sorties de nos applications.</p>
+        <p class="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">Vous pouvez recevoir des formations, des informations et appuis techniques partout oû vous êtes grâce à nos applications. 
+        Enregistrez-vous pour être notifier dès la sorties de nos applications.</p>
         <div class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
             <a href="#" class="w-full sm:w-auto bg-green-800 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-                <svg class="mr-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg>
                 <div class="text-left">
                     <div class="mb-1 text-xs">Visitez le site</div>
                     <div class="-mt-1 font-sans text-sm font-semibold">plateforme.hare.com</div>
@@ -92,6 +90,7 @@ function Acheteur() {
 
         <div className="bg-gray-100 max-w-[740px] mx-auto flex justify-center self-center px-5 py-10 my-10 border rounded-xl shadow-md shadow-gray-300   ">
           <form className="w-[460px]" onSubmit={handleSubmit}>
+          {error &&<div className="bg-red-400 block text-gray-50 w-full p-2.5 my-1 ">{error}</div>}
             <div class="mb-6">
               <label for="name" class="block mb-2 text-sm font-semibold text-gray-900 dark:text-white">Nom et Prénoms</label>
               <input type="text" ref={nameRef} class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Mr/Mm.  Nom et Prenoms" required />
