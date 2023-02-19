@@ -23,9 +23,18 @@ module.exports = {
         '80%':{transform:'scaleY(1.2)'},
         '100%':{transform:'scaleY(1)'},
       },
+      'torch': {
+        from: {
+          backgroundPosition: '-100% 0',
+        },
+        to: {
+          backgroundPosition: '200% 0',
+        },
+      },
     },
     animation: {
       'open-menu':'open-menu 0.5s ease-in-out forwards',
+      'torch': 'torch 5s infinite',
     },
 
     },

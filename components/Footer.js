@@ -17,7 +17,7 @@ const {footerIcon} = footer;
       <Link href="/" className="flex flex-col title-font font-medium items-center md:justify-start justify-center text-gray-900">
          <Image width= "150" height="50" className="" src={footerIcon} alt="icon-haré" />
         <span className="ml-3 text-2xl font-bold text-white">Plateforme <br/>Haré.com</span>
-        <p className="mt-2 text-md text-white font-extrabold">" Une agricuture de valeur "</p>
+        <p className="mt-2 text-md text-white text-center font-extrabold">" Promouvoir une agriculture de valeur "</p>
       </Link>
      
     </div>
@@ -60,13 +60,16 @@ const {footerIcon} = footer;
         <h2 className="title-font font-semibold  text-white tracking-widest text-2xl mb-3">Nos Applications</h2>
         <nav className="list-none mb-10">
           <li className="pb-1 cursor-pointer">
-            <Link href="/" className=" text-white hover:text-gray-800">App Pour Agregateurs</Link>
+            <Link href="/" className=" text-white hover:text-gray-800">Plateforme Haré</Link>
           </li>
           <li className="pb-1 cursor-pointer">
-            <Link href="/" className="text-white hover:text-gray-800">App Pour Producteurs</Link>
+            <Link href="/" className="text-white hover:text-gray-800">Marché Haré</Link>
           </li>
           <li className="pb-1 cursor-pointer">
-            <Link href="/" className="text-white hover:text-gray-800">Blogs</Link>
+            <Link href="/blogs" className="text-white hover:text-gray-800">Blogs</Link>
+          </li>
+          <li className="pb-1 cursor-pointer">
+            <Link href="/financement" className="text-white hover:text-gray-800">Hare-finance</Link>
           </li>
        
         </nav>
@@ -83,7 +86,7 @@ const {footerIcon} = footer;
             <a className=" text-white hover:text-gray-800">+228 90 68 68 45</a>
           </li>
           <li className="pb-1 cursor-pointer">
-            <a className="text-white hover:text-gray-800">+228 93 40 82 89<br/></a>
+            <a className="text-white hover:text-gray-800">+228 91 64 64 41<br/></a>
           </li>
           <li className="pb-1 cursor-pointer">
           <h2 className='flex text-lg justify-center md:justify-start'><svg id="baseline-location_on-24px" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -107,7 +110,7 @@ const {footerIcon} = footer;
   </div>
   <div className="bg-bg_button">
     <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-      <p className="text-white text-sm text-center sm:text-left">© 2022 Haré.com —
+      <p className="text-white text-sm text-center sm:text-left">© 2023 Haré-AgriSolutions —
         <Link href="https://twitter.com/ephraemogouvi" rel="noopener noreferrer" className="text-white ml-1" target="_blank">Crée et maintenu par TheHarmonycs</Link>
       </p>
       <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
