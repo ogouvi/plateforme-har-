@@ -40,12 +40,20 @@ function Acheteur() {
   const {heroAchat, icon} = acheteur;
   return (
     <div>
-      <div class=" relative overflow-hidden md:h-[38rem]">
-        {/*<!-- Item 5 -->*/}
-        <div class="h-[60vw] flex items-center w-screen md:h-full bg-heroAchat bg-cover duration-700 ease-in-out" priority data-carousel-item>
-          {/**<img src="/platefore-hare.com/assets/images/agri-products-fresh-veg.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/> */}
-          <span className=" text-white bg-gray-800  p-3 bg-opacity-30 mx-auto rounded-md text-xl md:text-3xl font-bold flex self-center text-center justify-center  ">Je suis acheteur de produits <br /> Agricoles </span>
-        </div>
+         <div class=" relative overflow-hidden md:h-[38rem]">
+      <div className=" relative ">
+      <div class="relative overflow-hidden  w-full flex flex-row justify-center  mx-auto items-center ">
+  {/*<!-- Item -->*/}
+                   <div  className=" h-[30vh] md:h-[38rem] overflow-hidden z-[-1]" data-carousel-item>
+                      <Image priority alt="Mountains" src="/assets/images/slider-02.webp"  quality={100} fill sizes="100vw" style={{objectFit: 'cover' }}/>
+                   </div>
+                      <div className=" bg-gray-800 bg-opacity-30 text-center py-2 items-center mx-auto justify-center">
+                  <span className="container mx-auto text-white  text-lg md:text-4xl font-bold ">Je veux acheter des produits agricole </span>
+                  </div>
+                 
+                  
+     </div>
+      </div>
       </div>
 
       <div className="bg-bg_client md:h-[35rem] flex items-center justify-center py-10">
@@ -55,49 +63,40 @@ function Acheteur() {
             votre produit selon votre planning.
             <br /><br />
             Que vous soyez un revendeur, un hôtel, un restaurant,
-            un transformateur, ou encore un exportateur accédez aux prdoduits de qualité traçable et
-            ayez un stock regulier. Pour tout achat de produits agricoles, Vous pouver compter sur Haré.com pour
+            un transformateur, ou encore un exportateur accédez aux produits de qualité traçable et
+            ayez un stock regulier. Pour tout achat de produits agricoles, Vous pouver compter sur Haré Agrisolutions pour
             un service de qualité, un approvisionnement garantis et plus d'économie par achat.
+            <br /><br />
+            Faites nous confiance pour tous vos besoin en produits agricoles 
           </span>
         </div>
       </div>
       <div className="container mx-auto py-5 ">
 
-      <h2 className="text-primary_color  text-2xl md:text-4xl font-bold flex  text-center justify-center pt-12">Visitez notre site ecommerce ou <br/> Téléchargez notre application <br/>pour éffectuer vos achats depuis votre téléphone </h2>
+      <h2 className="text-primary_color  text-lg md:text-2xl font-bold flex  text-center justify-center pt-12">Visitez notre site ecommerce ou <br/> Téléchargez notre application <br/>pour éffectuer vos achats depuis votre téléphone </h2>
         <div className="bg-gray-100 max-w-[740px] mx-auto flex flex-col justify-center self-center px-5 py-10 my-10 border rounded-xl shadow-md shadow-gray-300   ">
           <Image width="200" height="100" src={icon} alt="laptop icon" className="py-5 mx-auto"/>
 
           <div class="w-full p-4 text-center bg-[#CEEFD9] border rounded-lg shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-        <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Bientôt Disponible</h5>
-        <p class="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">Vous pouvez acheter tous produits agricoles partout oû vous êtes grâce à nos applications. 
-        Enregistrez-vous pour etre notifier à la soties de nos applications.</p>
+        <h5 class="mb-2 text-xl font-bold text-gray-900 dark:text-white"> Déja Disponible</h5>
+        <p class="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">Vous pouvez acheter tous produits agricoles partout oû vous êtes grâce à nos applications isponible sur android, iphone et le web.</p>
         <div class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
+ 
             <a href="#" class="w-full sm:w-auto bg-green-800 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-                <svg class="mr-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg>
-                <div class="text-left">
-                    <div class="mb-1 text-xs">Disponible sur</div>
-                    <div class="-mt-1 font-sans text-sm font-semibold">Mac App Store</div>
-                </div>
-            </a>
-            <a href="#" class="w-full sm:w-auto bg-green-800 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-                <svg class="mr-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"></path></svg>
-                <div class="text-left">
-                    <div class="mb-1 text-xs">Télécharger sur </div>
-                    <div class="-mt-1 font-sans text-sm font-semibold">Google Play</div>
-                </div>
-            </a>
-            <a href="#" class="w-full sm:w-auto bg-green-800 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-                <svg class="mr-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"></path></svg>
+            <svg class="mr-3 w-7 h-7" id="baseline-language-24px" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path id="Path_330" data-name="Path 330" d="M0,0H24V24H0Z" fill="none"/>
+  <path id="Path_331" data-name="Path 331" d="M11.99,2A10,10,0,1,0,22,12,10,10,0,0,0,11.99,2Zm6.93,6H15.97a15.649,15.649,0,0,0-1.38-3.56A8.03,8.03,0,0,1,18.92,8ZM12,4.04A14.087,14.087,0,0,1,13.91,8H10.09A14.087,14.087,0,0,1,12,4.04ZM4.26,14a7.822,7.822,0,0,1,0-4H7.64a16.515,16.515,0,0,0-.14,2,16.515,16.515,0,0,0,.14,2Zm.82,2H8.03a15.649,15.649,0,0,0,1.38,3.56A7.987,7.987,0,0,1,5.08,16ZM8.03,8H5.08A7.987,7.987,0,0,1,9.41,4.44,15.649,15.649,0,0,0,8.03,8ZM12,19.96A14.087,14.087,0,0,1,10.09,16h3.82A14.087,14.087,0,0,1,12,19.96ZM14.34,14H9.66a14.713,14.713,0,0,1-.16-2,14.585,14.585,0,0,1,.16-2h4.68a14.585,14.585,0,0,1,.16,2A14.713,14.713,0,0,1,14.34,14Zm.25,5.56A15.649,15.649,0,0,0,15.97,16h2.95A8.03,8.03,0,0,1,14.59,19.56ZM16.36,14a16.515,16.515,0,0,0,.14-2,16.515,16.515,0,0,0-.14-2h3.38a7.822,7.822,0,0,1,0,4Z" fill="#fff"/>
+</svg>
                 <div class="text-left">
                     <div class="mb-1 text-xs">Visitez le site  </div>
-                    <div class="-mt-1 font-sans text-sm font-semibold">www.marché-haré.com</div>
+                    <div class="-mt-1 font-sans text-sm font-semibold">www.marche-hare.com</div>
                 </div>
             </a>
         </div>
     </div>
         </div>
 
-        <h2 className="text-primary_color text-2xl md:text-4xl font-bold flex items-center justify-center pt-16">Enregistrez vous pour beneficier de plus<br />de services persononalisés</h2>
+        <h2 className="text-primary_color text-lg md:text-2xl font-bold flex items-center justify-center pt-16">Enregistrez vous pour beneficier de plus<br />de services persononalisés</h2>
 
 
         <div className="bg-gray-100 max-w-[740px] mx-auto flex justify-center self-center px-5 py-10 my-10 border rounded-xl shadow-md shadow-gray-300   ">

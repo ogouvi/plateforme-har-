@@ -16,12 +16,21 @@ const Apropos = () => {
 
   return (
 <div>
-    <div className=" relative md:h-[38rem]">
-        <div priority className="h-[60vw] md:h-full flex items-center   bg-heroApropos bg-cover " >
-          <span className=" text-white bg-gray-800  p-3 bg-opacity-30 mx-auto rounded-md text-3xl md:text-5xl font-bold flex self-center text-center justify-center ">A propos de nous
-          </span>
-            </div>
-    </div>
+<div class=" relative overflow-hidden md:h-[38rem]">
+      <div className=" relative ">
+      <div class="relative overflow-hidden  w-full flex flex-row justify-center  mx-auto items-center ">
+  {/*<!-- Item -->*/}
+                   <div  className=" h-[30vh] md:h-[38rem] overflow-hidden z-[-1]" data-carousel-item>
+                      <Image priority alt="Mountains" src="/assets/images/pexels-airin-party-767240.webp"  quality={100} fill sizes="100vw" style={{objectFit: 'cover' }}/>
+                   </div>
+                      <div className=" bg-gray-800 bg-opacity-30 text-center py-2 items-center mx-auto justify-center">
+                  <span className="container mx-auto text-white  text-lg md:text-4xl font-bold ">A propos de nous </span>
+                  </div>
+                 
+                  
+     </div>
+      </div>
+      </div>
     <div className="bg-bg_client md:h-[35rem] flex items-center justify-center">
         <div className=" container flex bg-green-500 bg-opacity-10 md:w-[960px] py-5 ">
           <span className=" text-white  md:text-xl font-semibold "> Haré.com est une start-up qui resout les grands problemes que fait face le secteur agricoles: <br/>L'education et l'accès à l'information des agriculteurs d'une part  et l'inefficacité de la chaîne de valeur d'une autre part.  Nous resolvons

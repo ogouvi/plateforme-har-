@@ -40,6 +40,18 @@ function Navbar() {
         <li onClick={() =>setShowNav(!showNav)}>
           <Link href="/" className="block py-2 pl-3 pr-4 text-white hover:text-primary_color rounded md:bg-transparent text-[16px] lg:text-[18px] md:p-0">Accueil</Link>
         </li>
+        <li>
+        <div className="dropdown dropdown-hover">
+  <label tabIndex={0} className="block py-2 pl-3 pr-4 text-white hover:text-primary_color rounded md:bg-transparent text-[16px] lg:text-[18px] md:p-0">
+    <Link href="/services">Services</Link>
+  </label>
+  <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+    <li><Link href="/" >Formations</Link></li>
+    <li><a href="https://www.marche-hare.com" target="_blank" rel="noreferrer" >Marché</a></li>
+    <li><Link href="/" >Financement</Link></li>
+  </ul>
+</div>
+        </li>
          {nav.map((item, index) =>{
             const {name, href} = item
             return (<li onClick={() =>setShowNav(!showNav)} key={index}>

@@ -7,9 +7,9 @@ import { clients } from '../lib/data';
 export default function Clients() {
   const {client1,client2, title1, title2 } = clients
   return (
-    <div className="my-10">
+    <div className="mt-10 mb-14">
        <div>
-         <h1 className="text-primary_color text-2xl md:text-4xl font-bold flex items-center justify-center pt-16 ">Potentiel Clients</h1>
+         <h1 className="text-primary_color text-2xl md:text-4xl font-bold flex items-center justify-center pt-5 ">Potentiel Clients</h1>
        </div>
 
      <div className="flex flex-col md:flex-row items-center justify-center py-10 ">
@@ -35,7 +35,7 @@ export default function Clients() {
      <Image width="auto" height="300" class=" rounded-t-lg" src={client2} alt="Client2 Image" />
         <div class="p-5">
                 <h5 class="mb-2 text-lg md:text-2xl font-bold tracking-tight text-white">{title2}</h5>
-            <p class="mb-3 font-normal text-white">Listez facilement votre produit et vendez en un seul click.</p>
+            <p class="mb-3 font-normal text-white">Faites nous confiance avec vos récoltes et vendez en un seul click.</p>
             <p class="mb-3 font-semibold text-white ">Recevez votre payement en moins de 48h!</p>
             <div className="flex justify-between mt-12">
             <Link href="/producteur" class="inline-flex items-center  text-sm font-medium text-center text-gray-100 underline hover:text-black">

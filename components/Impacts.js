@@ -4,7 +4,7 @@ import {impacts} from '../lib/data';
 
 const Impacts = () => {
   return (
-    <div className="my-10">
+    <div className="my-20">
         <div className="container mx-auto grid items-center justify-center grid-cols-2 md:flex md:flex-row  ">
            <div className="impact bg-[url('../public/assets/images/pexels-quang-nguyen-vinh-2135677.webp')] bg-cover h-52  flex items-center justify-center ">
             <h2 className="

@@ -40,11 +40,19 @@ function Acheteur() {
   return (
     <div>
       <div class=" relative overflow-hidden md:h-[38rem]">
-        {/*<!-- Item 5 -->*/}
-        <div priority class="h-[60vw] flex items-center w-screen md:h-full bg-heroVend bg-cover duration-700 ease-in-out" data-carousel-item>
-          {/**<img src="/platefore-hare.com/assets/images/agri-products-fresh-veg.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/> */}
-          <span className=" text-white bg-gray-800  p-3 bg-opacity-30 mx-auto rounded-md text-xl md:text-2xl font-bold flex self-center text-center justify-center  ">Je suis producteur et vendeur de produits <br /> Agricoles </span>
-        </div>
+      <div className=" relative ">
+      <div class="relative overflow-hidden  w-full flex flex-row justify-center  mx-auto items-center ">
+  {/*<!-- Item -->*/}
+                   <div  className=" h-[30vh] md:h-[38rem] overflow-hidden z-[-1]" data-carousel-item>
+                      <Image priority alt="Mountains" src="/assets/images/pexels-maarten-van-den-heuvel-2284170.webp"  quality={100} fill sizes="100vw" style={{objectFit: 'cover' }}/>
+                   </div>
+                      <div className=" bg-gray-800 bg-opacity-30 text-center py-2 items-center mx-auto justify-center">
+                  <span className="container mx-auto text-white  text-lg md:text-4xl font-bold ">Je suis producteur et vendeur de produits agricole </span>
+                  </div>
+                 
+                  
+     </div>
+      </div>
       </div>
 
       <div className="bg-bg_client md:h-[35rem] flex items-center justify-center">

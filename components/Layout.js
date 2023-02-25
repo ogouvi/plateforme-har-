@@ -10,7 +10,8 @@ const Layout = ({children}) => {
     <div>
         <Head>
             <title>Plateforme-Haré.com</title>
-            <meta name='keyword' content='agriculture, agritech, ecommerce, agriculteurs'/>
+            <meta name='keyword' content='la plateforme hare,agriculture, agritech, ecommerce, agriculteurs'/>
+            <meta name='keyword' content='la plateforme agricole au togo, solutions agricole au togo'/>
         </Head>
         <Welcome />
         <Navbar />

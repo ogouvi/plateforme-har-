@@ -57,20 +57,21 @@ const {footerIcon} = footer;
         </nav>
       </div>
       <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 className="title-font font-semibold  text-white tracking-widest text-2xl mb-3">Nos Applications</h2>
+        <h2 className="title-font font-semibold  text-white tracking-widest text-2xl mb-3">Nos Services</h2>
         <nav className="list-none mb-10">
-          <li className="pb-1 cursor-pointer">
+          <li className="pb-1 ">
             <Link href="/" className=" text-white hover:text-gray-800">Plateforme Haré</Link>
           </li>
-          <li className="pb-1 cursor-pointer">
-            <Link href="/" className="text-white hover:text-gray-800">Marché Haré</Link>
+          <li className="pb-1">
+          <a href="https://www.marche-hare.com" target="_blank" rel="noreferrer" className=" text-white hover:text-gray-800" >Marché Haré </a>
           </li>
-          <li className="pb-1 cursor-pointer">
-            <Link href="/blogs" className="text-white hover:text-gray-800">Blogs</Link>
+          <li className="pb-1 ">
+            <Link href="/" className="text-white hover:text-gray-800">Blogs</Link>
           </li>
-          <li className="pb-1 cursor-pointer">
-            <Link href="/financement" className="text-white hover:text-gray-800">Hare-finance</Link>
+          <li className="pb-1 ">
+            <Link href="/" className="text-white hover:text-gray-800">Hare-finance</Link>
           </li>
+          
        
         </nav>
       </div>
@@ -102,7 +103,7 @@ const {footerIcon} = footer;
   <path id="Path_832" data-name="Path 832" d="M0,0H24V24H0Z" fill="none"/>
 </svg>
  Email:</h2>
-            <a className="text-white hover:text-gray-800">contact.hare@gmail.com</a>
+            <a className="text-white hover:text-gray-800">contact.hare@yahoo.com</a>
           </li>
         </nav>
       </div>
@@ -110,7 +111,7 @@ const {footerIcon} = footer;
   </div>
   <div className="bg-bg_button">
     <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-      <p className="text-white text-sm text-center sm:text-left">© 2023 Haré-AgriSolutions —
+      <p className="text-white text-sm text-center sm:text-left">© 2023 Haré-Agrisolutions —
         <Link href="https://twitter.com/ephraemogouvi" rel="noopener noreferrer" className="text-white ml-1" target="_blank">Crée et maintenu par TheHarmonycs</Link>
       </p>
       <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
