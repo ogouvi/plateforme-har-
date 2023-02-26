@@ -40,12 +40,12 @@ const Apropos = () => {
         </div>
       </div>
     
-      <div className=" hidden md:flex flex-col items-center mt-10">
+      <div className=" hidden flex-col items-center mt-10">
         <h2 className="mt-5 text-center text-3xl font-bold tracking-tight md:text-5xl">FAQ</h2>
         <p className="mt-3 text-lg text-neutral-500 md:text-xl">Foire aux questions</p>
       </div>
      
-    <div className="container mx-auto h-[20rem]  hidden sm:block  border rounded-lg shadow-md my-10 ">
+    <div className="container mx-auto h-[20rem]  hidden   border rounded-lg shadow-md my-10 ">
        
         <ul className="hidden w-ful text-md font-medium indicator text-center text-white divide-x divide-green-800  rounded-lg sm:flex" id="fullWidthTab" data-tabs-toggle="#fullWidthTabContent" role="tablist">
             <li className="w-full">
@@ -118,7 +118,7 @@ const Apropos = () => {
         </div>
     </div>
 
-    <div className="relative sm:hidden flex  flex-col justify-start overflow-hidden bg-gray-50 py-10">
+    <div className="relative flex  flex-col justify-start overflow-hidden bg-gray-50 py-10">
   <div className="relative w-full bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-2xl sm:rounded-lg sm:px-10">
     <div className="mx-auto px-5">
       <div className="flex flex-col items-center">
