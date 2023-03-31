@@ -60,16 +60,16 @@ const {footerIcon} = footer;
         <h2 className="title-font font-semibold  text-white tracking-widest text-2xl mb-3">Nos Services</h2>
         <nav className="list-none mb-10">
           <li className="pb-1 ">
-            <Link href="/" className=" text-white hover:text-gray-800">Plateforme Haré</Link>
+            <Link href="/catalogues" className=" text-white hover:text-gray-800">Intrants et Équipements</Link>
           </li>
           <li className="pb-1">
-          <a href="https://www.marche-hare.com" target="_blank" rel="noreferrer" className=" text-white hover:text-gray-800" >Marché Haré </a>
+          <a href="https://www.marche-hare.com" target="_blank" rel="noreferrer" className=" text-white hover:text-gray-800" >Marché en ligne </a>
           </li>
           <li className="pb-1 ">
-            <Link href="/" className="text-white hover:text-gray-800">Blogs</Link>
+            <Link href="https://blog-hare.vercel.app/" className="text-white hover:text-gray-800">Blogs</Link>
           </li>
           <li className="pb-1 ">
-            <Link href="/" className="text-white hover:text-gray-800">Hare-finance</Link>
+            <Link href="/financements" className="text-white hover:text-gray-800">HareFinance</Link>
           </li>
           
        

@@ -72,5 +72,6 @@ module.exports = {
     require("flowbite/plugin"),
     require("tw-elements/dist/plugin"),
     require("daisyui"),
+   // require('@tailwindcss/aspect-ratio'),
   ],
 }

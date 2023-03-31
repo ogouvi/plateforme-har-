@@ -73,7 +73,7 @@ function Acheteur() {
       </div>
       <div className="container mx-auto py-5 ">
 
-      <h2 className="text-primary_color  text-lg md:text-2xl font-bold flex  text-center justify-center pt-12">Visitez notre site ecommerce ou <br/> Téléchargez notre application <br/>pour éffectuer vos achats depuis votre téléphone </h2>
+      <h2 className="text-primary_color  text-lg md:text-xl font-bold flex  text-center justify-center pt-12">Visitez notre site ecommerce ou <br/> Téléchargez notre application <br/>pour éffectuer vos achats depuis votre téléphone </h2>
         <div className="bg-gray-100 max-w-[740px] mx-auto flex flex-col justify-center self-center px-5 py-10 my-10 border rounded-xl shadow-md shadow-gray-300   ">
           <Image width="200" height="100" src={icon} alt="laptop icon" className="py-5 mx-auto"/>
 
@@ -96,7 +96,7 @@ function Acheteur() {
     </div>
         </div>
 
-        <h2 className="text-primary_color text-lg md:text-2xl font-bold flex items-center justify-center pt-16">Enregistrez vous pour beneficier de plus<br />de services persononalisés</h2>
+        <h2 className="text-primary_color text-lg md:text-xl font-bold flex items-center justify-center pt-16">Enregistrez vous pour beneficier de plus<br />de services persononalisés</h2>
 
 
         <div className="bg-gray-100 max-w-[740px] mx-auto flex justify-center self-center px-5 py-10 my-10 border rounded-xl shadow-md shadow-gray-300   ">

@@ -8,11 +8,35 @@ const Harefin = () => {
   return (
     <div>
 <section className="text-gray-600 body-font">
-  <div className="container mx-auto flex px-5 pt-28 items-center justify-center flex-col">
+  <div className="container mx-auto flex pt-16 md:pt-28 items-center justify-center flex-col">
+    <div className="py-8 text-3xl md:text-5xl font-extrabold"><span>Haré</span><span className="text-orange-400">Finance</span></div>
     <Image className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="/assets/images/fintech.jpg" width="300" height="300"/>
-    <div className="text-center lg:w-2/3 w-full">
-      <h1 className="title-font py-2 sm:text-3xl text-xl mb-4 font-bold text-blue-600">Bienvenue dans le monde des possibilités</h1>
-      <p className="mb-8 leading-relaxed">HareFinance est un programmme qui vous facilite le pro</p>
+    <div className="text-center">
+      <h1 className="title-font py-2 sm:text-3xl text-xl mb-2 font-bold text-blue-600">Rendre les services financiers abordables et accessibles aux ménages ruraux </h1>
+      <p className="mb-2 leading-relaxed">HaréFinance est un service qui propose des micro financement aux petits et moyens producteurs agricoles et aussi aux commerçants. Ce service va impacter la population nécessiteuse grace aux crédit aux niveaux individuel et communautaire afin de 
+      créer une amélioration durable de leur moyen de subsistance et de leur niveau de vie engendrand la prospérité</p>
+      
+    </div>
+
+    <div className="text-center">
+      <h1 className="title-font py-2 sm:text-3xl text-xl mb-2 font-bold text-blue-600">Notre avantage</h1>
+      <p className="mb-2 leading-relaxed">La stratégie de HaréFinance est centrée sur sa solution digital qui est hyperlocale et hyperflexible adapté
+      pour les besoin de la population rurale. La technologie, fondamental à chaque étape des opérations permet une approche sans papier, sans présence et sans espèces
+      </p>
+      
+    </div>
+    
+    <div className="text-start">
+      <h1 className="title-font py-2 sm:text-3xl text-xl mb-5 font-bold text-blue-600">Ayez accès aux capitaux facilement en <b>5 étapes</b></h1>
+      <div className="my-2 leading-relaxed">
+        <p className="mb-3"><span className="bg-gray-700 text-white py-1 px-3 rounded-full mr-2">1</span> Faites une demande en ligne ou dans notre bureau<br/></p>        
+       <p className="mb-3"> <span className="bg-gray-700 text-white py-1 px-3 rounded-full mr-2 ">2</span> Evaluation de votre profil<br/></p> 
+       <p className="mb-3"> <span className="bg-gray-700 text-white py-1 px-3 rounded-full mr-2 ">3</span> Prévisions et etude de vos états financiers<br/></p> 
+       <p className="mb-3"> <span className="bg-gray-700 text-white py-1 px-3 rounded-full mr-2 ">4</span> Visite du site ou de terrain<br/></p> 
+       <p className="mb-3"> <span className="bg-gray-700 text-white py-1 px-3 rounded-full mr-2 ">5</span> Etablissement du contrat et financement<br/></p> 
+
+      </div>
+      
     </div>
   </div>
 </section>
@@ -42,17 +66,23 @@ const Harefin = () => {
             </div>
             
             <div class="p-6 space-y-6">
-                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                    With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
+                <p class="text-lg font-semibold leading-relaxed text-gray-800 dark:text-gray-400">
+                  Avez-vous besoin de capitaux pour créer ou dévéloper votre projet agricole
                 </p>
-                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                    The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
+                <p class="text-base leading-relaxed text-gray-600 dark:text-gray-300">
+                  HaréFinance vous offre des financements pour votre projet agricole, sans garantie foncière et pas besoin dossiers complexes.
+                  Vous pouvez reçevoir une reponse en moins de <b>48h</b> après votre demande. La durée du remboursement étant flexible, vous pouvez payer
+                  après les récoltes.
                 </p>
             </div>
            
             <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-                <button data-modal-hide="ModalOne" type="button" onClick={() => setShowModalOne(false)} class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Faire une demande</button>
-                <button data-modal-hide="ModalOne" type="button" onClick={() => setShowModalOne(false)} class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decliner</button>
+<button data-modal-hide="ModalOne" type="button" onClick={() => setShowModalOne(false)} class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+<Link href="http://forms.gle/x1uYf2pJVaRtoMSP9"  >
+  Faire une demande
+  </Link>
+  </button>
+<button data-modal-hide="ModalOne" type="button" onClick={() => setShowModalOne(false)} class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decliner</button>
             </div>
         </div>
     </div>
@@ -86,16 +116,23 @@ const Harefin = () => {
             </div>
            
             <div class="p-6 space-y-6">
-                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                    With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
+                <p class="text-lg font-semibold leading-relaxed text-gray-800 dark:text-gray-400">
+                  Avez-vous besoin de produits agro-alimentaires à crédit
                 </p>
-                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                    The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
+                <p class="text-base leading-relaxed text-gray-600 dark:text-gray-300">
+                  HaréFinance vous offre du stock de produits agro-alimentaires a crédits pour couvrir vos besoin et générer du reveneue
+                  Vous pouvez reçevoir une reponse en moins de <b>48h</b> après votre demande. Vous pouvez rembourser le crédit par echolon
+                  selon le montant du crédit.
                 </p>
             </div>
             
             <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-                <button data-modal-hide="defaultModal" type="button" onClick={() => setShowModalTwo(false)} class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Faire une demande</button>
+                  <button data-modal-hide="defaultModal" type="button" onClick={() => setShowModalTwo(false)} class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  <Link href="http://forms.gle/hmSUxfPSVphntKCj9/">
+                    Faire une demande
+                   </Link>
+                    </button>
+                
                 <button data-modal-hide="defaultModal" type="button" onClick={() => setShowModalTwo(false)} class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decliner</button>
             </div>
         </div>
@@ -105,6 +142,9 @@ const Harefin = () => {
 </div>
 </div>
 
+</section>
+<section>
+  
 </section>
     </div>
   )
