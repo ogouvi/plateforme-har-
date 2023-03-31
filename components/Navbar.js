@@ -46,7 +46,7 @@ function Navbar() {
     <Link href="/services">Services</Link>
   </label>
   <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-    <li><Link href="/" >Blog</Link></li>
+    <li><Link href="https://blog-hare.vercel.app/" >Blog</Link></li>
     <li><Link href="/catalogues" >Intrants et Équipements</Link></li>
     <li><a href="https://www.marche-hare.com" target="_blank" rel="noreferrer" >Marché Agricole</a></li>
     <li><Link href="/financement" >HareFinance</Link></li>
