@@ -79,7 +79,7 @@ function Acheteur() {
 
           <div class="w-full p-4 text-center bg-[#CEEFD9] border rounded-lg shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
         <h5 class="mb-2 text-xl font-bold text-gray-900 dark:text-white"> Déja Disponible</h5>
-        <p class="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">Vous pouvez acheter tous produits agricoles partout oû vous êtes grâce à nos applications isponible sur android, iphone et le web.</p>
+        <p class="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">Vous pouvez acheter tous produits agricoles partout oû vous êtes grâce à nos applications disponible sur android, iphone et le web.</p>
         <div class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
  
             <a href="https://www.marche-hare.com/" class="w-full sm:w-auto bg-green-800 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
